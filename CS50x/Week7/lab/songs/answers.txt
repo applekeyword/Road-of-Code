@@ -1,0 +1,6 @@
+The peroson may like energetic, fast-paced, sadder, negative tone, danceable songs
+
+According to their genres, classify them and calculate average on different genres.
+Because different genres may vary a lot in energy, valence and danceability, a person who like higher energy, valence and
+danceability and lower energy, valence and danceability may results with a person who like common energy, valence and
+daceacility.

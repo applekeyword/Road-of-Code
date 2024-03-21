@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort.
+
+How do you know?: The time it spent on sorting sorted files is significantly reduced.
+
+sort2 uses: Merge sort.
+
+How do you know?: The time it spent on file containing same amount items is almost the same and less than the sort3s'.
+
+sort3 uses: Selection sort.
+
+How do you know?: The time it spent on file containing same amount items is almost the same and more than the sort2s'.

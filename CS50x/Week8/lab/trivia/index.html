@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>
+                    Which of the following programming language is known for its high performance
+                    and is commonly used in applications where speed is crucial?
+                </h3>
+                <button onclick="checkChoiceAnswer(this)">Python</button>
+                <button onclick="checkChoiceAnswer(this)">C++</button>
+                <button onclick="checkChoiceAnswer(this)">Ruby</button>
+                <button onclick="checkChoiceAnswer(this)">Java</button>
+                <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>
+                    Which country stipulates that vehicles and pedestrains should go alongwith the right side of road?
+                </h3>
+                <input type="text" id="answer" name="answer">
+                <button onclick="checkTextAnswer()">Check Answer</button>
+                <p id="feedback2"></p>
+            </div>
+        </div>
+        <script>
+            function checkChoiceAnswer(button) {
+                let correctAnswer = "C++";
+                let selectedAnswer = button.textContent;
+                if (selectedAnswer == correctAnswer)
+                {
+                    button.style.backgroundColor = 'green';
+                    document.getElementById('feedback1').innerHTML = 'Correct!';
+                }
+                else
+                {
+                    button.style.backgroundColor = 'red';
+                    document.getElementById('feedback1').innerHTML = 'Incorrect!';
+                }
+            }
+
+            function checkTextAnswer() {
+                let correctAnswer = "China";
+                let selectedAnswer = document.getElementById("answer").value;
+                if (selectedAnswer == correctAnswer) {
+                    document.getElementById("answer").style.backgroundColor = 'green';
+                    document.getElementById("feedback2").innerHTML = "Correct!";
+                }
+                else
+                {
+                    document.getElementById("answer").style.backgroundColor = 'red';
+                    document.getElementById("feedback2").innerHTML = "Incorrect!";
+                }
+            }
+        </script>
+    </body>
+</html>
